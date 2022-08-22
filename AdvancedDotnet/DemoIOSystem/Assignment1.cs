@@ -43,7 +43,7 @@ namespace AdvancedDotnet.DemoIOSystem
                 Console.WriteLine(br.ReadString());
                 Console.WriteLine(br.ReadInt32());
                 br.Close();
-                fs.Close();
+                fs.Close(); 
             }
             catch (Exception ex)
             {
