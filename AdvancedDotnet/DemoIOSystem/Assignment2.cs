@@ -7,14 +7,14 @@ namespace AdvancedDotnet.DemoIOSystem
 {
     class Assignment2
     {
-        
         static void WriteToFileUsingStream()
         {
+           
             try
             {
                 FileStream fs = new FileStream(@"D:\CSharp_Microsoft\Testfolder\TextDoc.txt", FileMode.Create, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(fs);
-                sw.WriteLine("This is sample text in the file");
+                string str = Console.ReadLine();
                 sw.Close();
                 fs.Close();
                 Console.WriteLine("Done");
@@ -41,9 +41,9 @@ namespace AdvancedDotnet.DemoIOSystem
         }
         static void Main(string[] args)
         {
-            student stu = new student();
-            
+
             WriteToFileUsingStream();
+
             ReadFromFileUsingStream();
         }
     }
