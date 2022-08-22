@@ -14,7 +14,7 @@ namespace AdvancedDotnet.DemoIOSystem
             {
                 FileStream fs = new FileStream(@"D:\CSharp_Microsoft\Testfolder\TextDoc.txt", FileMode.Create, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(fs);
-                string str = Console.ReadLine();
+                string sr = Console.ReadLine();
                 sw.Close();
                 fs.Close();
                 Console.WriteLine("Done");
